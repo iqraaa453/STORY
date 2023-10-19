@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+
+<style>
+    body {
+        background-color: black;
+        margin: auto;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        height: 900px;
+        text-align: center;
+        border-radius: 12px solid aqua;
+    }
+
+    p {
+        color: aqua;
+    }
+
+    select,
+    input,
+    textarea {
+        background-color: rgb(214, 242, 242);
+        border-radius: 40px;
+    }
+    h1 {
+        width: 1000px;
+        color: aqua;
+        margin: auto;
+        top: 25px;
+    } 
+    h2,
+    h3 {
+        color: aqua;
+        margin: auto;
+        width: 250px;
+        top: 25px;
+    }
+
+    .btn {
+        background-color: aqua;
+        border-radius: 40px;
+        margin: auto;
+        font-size: medium;
+        width: 120px;
+        height: 45px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .btn:hover {
+        background-color: rgb(205, 234, 234);
+    }
+</style>
+
+<body>
+    <form action="">
+        <h1>Contact Form</h1>
+        <p>Required field is followed by *</p>
+        <h2>Contact Information</h2>
+        <p>Name: *<input type="text" name="name" required></p>
+        <fieldset>
+            <legend>Gender*</legend>
+            <p>Male:<input type="radio" name="Gender" id="Gender"> Female:<input type="radio" name="Gender" id="Gender">
+            </p>
+        </fieldset>
+        <p>Address:<textarea name="Address" id="Address" cols="60" rows="4"></textarea></p>
+        <p>Email:*<input type="Email" name="Email" id="Email" required></p>
+        <p>Pincode:<input type="Pincode" name="Pincode" id="Pincode"></p>
+
+        <h2>Payment Information</h2>
+        <p>Card type:*
+            <select name="card_type" id="card_type">
+                <option value="">--select a card type--</option>
+                <option value="visa">Visa</option>
+                <option value="Debit card">Debit card</option>
+                <option value="Master card">Master card</option>
+            </select>
+        </p>
+        <p>Card Number*<input type="Card_Number" name=" Card_Number" id="Card_Number" required></p>
+        <p>Expiration Date<input type="date" name="exp_date" id="exp_date"></p>
+        <p>CVV*<input type="password" name="CVV" id="CVV" required></p>
+        <button class="btn">Pay Now</button>
+        <h3>Thank you!</h3>
+    </form>
+</body>
+
+</html>
